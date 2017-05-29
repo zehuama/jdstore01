@@ -29,6 +29,6 @@ Rails.application.routes.draw do
   resources :cart_items
 
   devise_for :users
-  root 'products#index'
+  root 'welcome#index'
 
 end
