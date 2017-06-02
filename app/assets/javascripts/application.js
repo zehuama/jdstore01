@@ -17,3 +17,11 @@
 //= require bootstrap/dropdown
 //= require bootstrap/modal
 //= require_tree .
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 125) {
+        $('#navbar').addClass('show_bgcolor')
+    } else {
+        $('#navbar').removeClass('show_bgcolor')
+    }
+})
