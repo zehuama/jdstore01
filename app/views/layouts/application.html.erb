@@ -10,24 +10,20 @@
 
   <body>
 
-    <div class="row">
-      <%= render "common/navbar" %>
-    </div>
-    <div class="customed-flash" >
-      <%= render "common/flashes" %>
-    </div>
+      <div class="content">
+        <%= render "common/navbar" %>
+      </div>
 
-    <div>
+      <div class="customed-flash">
+        <%= render "common/flashes" %>
+      </div>
 
-      <%= yield %>
-    </div>
+      <div>
+        <%= yield %>
+      </div>
 
-
-    <div class="push"></div>
-    <%= render "common/footer" %>
+        <%= render "common/footer" %>
 
   </body>
-
-
 
 </html>
